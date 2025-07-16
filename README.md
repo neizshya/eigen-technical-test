@@ -51,7 +51,7 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
     ```env
     VITE_NEWS_API_KEY=your_personal_news_api_key_here
-    VITE_NEWS_API_URL=[https://newsapi.org/v2](https://newsapi.org/v2)
+    VITE_NEWS_API_URL=https://newsapi.org/v2/
     ```
 
 4.  **Run the development server:**
