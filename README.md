@@ -37,7 +37,7 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
 1.  **Navigate to the app folder:**
     ```bash
-    cd news-apps-folder # <-- Change to your actual folder name
+    cd news
     ```
 
 2.  **Install all packages:**
@@ -66,4 +66,37 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
 This folder contains the solutions for the algorithm portion of the technical test.
 
+### How to Run the Typescript File
+1. **Install nodejs on your machine**
+
+
+2. **Install ts-node globally through terminal**
+    ```bash
+    npm install -g ts-node
+    ```
+
+
+3. **Navigate to the algorithm folder**
+    ```bash
+    cd Algoritma
+    ```
+4. **Create tsconfig.json on the folder and add this line**
+   ```json
+   {
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
+    }
+   }
+   ```
+
+6. **Open the terminal on the folder and run the file**
+   ```bash
+    ts-node filename.ts
+    ```
 ---
