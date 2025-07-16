@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Footer } from "antd/es/layout/layout";
+import RoutesIndex from "./routes";
+import { Layout, Typography } from "antd";
+import { Link } from "react-router-dom";
+
+const { Header, Content } = Layout;
+const { Title } = Typography;
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+    <Layout style={{ minHeight: "100dvh" }}>
+      <Header
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 1,
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+        }}>
+        <Title level={3} style={{ margin: 0 }}>
+          <Link to={"/"} style={{ color: "white" }}>
+            US Top Headline
+          </Link>
+        </Title>
+      </Header>
+      <Content style={{ padding: "1em" }}>
+        <RoutesIndex />
+      </Content>
+      <Footer style={{ textAlign: "center" }}>
+        US News Portal ©{new Date().getFullYear()} Created with Ant Design by{" "}
+        <a
+          href="https://github.com/neizshya"
+          target="_blank"
+          rel="noopener noreferrer">
+          Neizshya
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </Footer>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
