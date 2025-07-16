@@ -66,6 +66,4 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
 This folder contains the solutions for the algorithm portion of the technical test.
 
-*(You can add more details here about how to run or check the algorithm solutions if needed).*
-
 ---
