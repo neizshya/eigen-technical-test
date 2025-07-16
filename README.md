@@ -51,7 +51,7 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
     ```env
     VITE_NEWS_API_KEY=your_personal_news_api_key_here
-    VITE_NEWS_API_URL=[https://newsapi.org/v2](https://newsapi.org/v2)
+    VITE_NEWS_API_URL=https://newsapi.org/v2/
     ```
 
 4.  **Run the development server:**
@@ -62,7 +62,7 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
 ---
 
-## 2. Algorithm Test 🧠
+## 2. Algorithm Test
 
 This folder contains the solutions for the algorithm portion of the technical test.
 
@@ -80,22 +80,8 @@ This folder contains the solutions for the algorithm portion of the technical te
     ```bash
     cd Algoritma
     ```
-4. **Create tsconfig.json on the folder and add this line**
-   ```json
-   {
-    "compilerOptions": {
-      "target": "ES2022",
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext",
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "strict": true,
-      "skipLibCheck": true
-    }
-   }
-   ```
 
-6. **Open the terminal on the folder and run the file**
+4. **Open the terminal on the folder and run the file**
    ```bash
     ts-node filename.ts
     ```
