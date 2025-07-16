@@ -80,22 +80,8 @@ This folder contains the solutions for the algorithm portion of the technical te
     ```bash
     cd Algoritma
     ```
-4. **Create tsconfig.json on the folder and add this line**
-   ```json
-   {
-    "compilerOptions": {
-      "target": "ES2022",
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext",
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "strict": true,
-      "skipLibCheck": true
-    }
-   }
-   ```
 
-6. **Open the terminal on the folder and run the file**
+4. **Open the terminal on the folder and run the file**
    ```bash
     ts-node filename.ts
     ```
