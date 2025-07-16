@@ -62,7 +62,7 @@ This is a news app built with React, TypeScript, and Ant Design. It shows how to
 
 ---
 
-## 2. Algorithm Test 🧠
+## 2. Algorithm Test
 
 This folder contains the solutions for the algorithm portion of the technical test.
 
